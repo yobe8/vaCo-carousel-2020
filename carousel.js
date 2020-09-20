@@ -1,13 +1,16 @@
 const passImagesCon = document.querySelector('.carousel__passImages-container'),
     rightBtn = document.querySelector('.carousel__passImages__rightButton'),
     leftBtn = document.querySelector('.carousel__passImages__leftButton');
-//querySelector와 getElement~ 의 차이를 알아보자 나중에.
 
 const image = new Image();
 image.className = 'js-carousel__PassImages__img';
 passImagesCon.insertBefore(image, rightBtn);
 
 let imgNum = 1;
+
+function clickDots() {
+    console.log('good');
+}
 
 function rightClick() {
     ++imgNum;
@@ -33,6 +36,7 @@ function init() {
     loadImages();
     leftBtn.addEventListener('click', leftClick);
     rightBtn.addEventListener('click', rightClick);
+    
 };
 
 init();
