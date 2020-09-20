@@ -1,0 +1,48 @@
+@import "./reset.css";
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container {
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.carousel__passImages-container {
+    width: 100%;
+    height: 80%;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing:border-box;
+}
+
+.js-carousel__PassImages__img {
+    width: 50%;
+}
+
+.clickDots-container {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clickDots-container ul {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
